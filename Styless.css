@@ -1,0 +1,32 @@
+body {
+    background-color: #f8f9fa; /* Color de fondo */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+}
+
+.jumbotron {
+    background-image: url('https://i0.wp.com/naciondeportes.com/wp-content/uploads/2022/11/betano-peru.jpg?fit=820%2C360&ssl=1&resize=350%2C200.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 100px 0; /* Ajuste del espacio interno */
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem; /* Tamaño del título */
+}
+
+.jumbotron p {
+    font-size: 1.5rem; /* Tamaño del texto */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.btn-facebook {
+    background-color: #dddfe6; /* Color de fondo de Facebook */
+    border-color: #3b5998; /* Color del borde de Facebook */
+}
+
+.btn-google {
+    background-color: #e9dcdb; /* Color de fondo de Google */
+    border-color: #ea4335; /* Color del borde de Google */
+}
