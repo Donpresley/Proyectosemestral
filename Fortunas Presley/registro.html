@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css" class="style">
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <img src="img/presley.png" alt="Presley logo" class="navbar-icon">
+          <a class="navbar-brand" href="#">Fortunas Presley's</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aviso.html">Casino</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Ayuda.html">Ayuda</a>
+              </li>
+              <li class="nav-item">
+                <div class="d-flex ms-lg-3">
+                  <a href="registro.html" class="btn btn-outline-success me-2" role="button">Registrarse</a>
+                  <a href="iniciosesion.html" class="btn btn-outline-success" role="button">Iniciar sesión</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="abs-center">
+        <form action="" class="form" id="formulario" onsubmit="return enviarFormulario()">
+            <h3>Registrarse</h3>
+            <div class="form-group">
+                Nombre <input type="text" class="form-control" id="nombre">
+                <span id="error-nombre" style="color: red;"></span><br>
+                Rut <input type="text" class="form-control" id="rut">
+                <span id="error-rut" style="color: red;"></span><br>
+                Apellido paterno <input type="text" class="form-control" id="appaterno">
+                <span id="error-appaterno" style="color: red;"></span><br>
+                Apellido materno <input type="text" class="form-control" id="apmaterno">
+                <span id="error-apmaterno" style="color: red;"></span><br>
+                Fecha de nacimiento <input type="date" class="form-control" id="fecha">
+                <span id="error-fecha" style="color: red;"></span><br>
+                <label for="Genero">Genero</label><br>
+                <select name="Genero" id="select">
+                    <option value="99">Seleccione genero</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Otro</option>
+                </select><span id="error-genero" style="color: red;"></span><br>
+                <br>
+                Correo electronico <input type="text" class="form-control" id="email">
+                <span id="error-email" style="color: red;"></span><br>
+                Número celular <input type="text" class="form-control" id="celular">
+                <span id="error-celular" style="color: red;"></span><br>
+                Profesion <input type="text" class="form-control" id="profesion">
+                <span id="error-profesion" style="color: red;"></span><br>
+                <input type="reset" class="btn btn-danger" value="Limpiar">
+                <input type="submit" class="btn btn-primary" value="Subir">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

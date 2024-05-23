@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blackjack</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style-blackjack.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div id='cash'>Tu Dinero: $1000</div>
+        <div id='bet'>Apuestas: $100</div>
+      
+        <div class='changeBet clearfix'>
+          <div id='subBet' class='lil button'>-</div>
+          <div id='placeBet' class='big button'>Apostar</div>
+          <div id='addBet' class='lil button last'>+</div>
+        </div>
+      
+        <div class='hide buttons clearfix'>
+          <div id='playHit' class='button'>Sacar</div>
+          <div id='playStay' class='button last'>Quedarse</div>
+        </div>
+      
+        <div class='fullbar clearfix'>
+          <div id='reset' class='hide button'>Siguiente ronda</div>
+          <div id='startover' class='hide button'>Resetear</div>
+        </div>
+      
+        <div class='title clearfix'>
+          <div class='player'>Jugador:</div>
+          <div class='computer'>Presley:</div>
+        </div>
+      
+        <div id='gameBoard' class='clearfix'>
+          <div class='player-section card-section'></div><div class='computer-section card-section'></div>
+        </div>
+      </div>
+      <script src="script-blackjack.js"></script>
+</body>
+</html>
